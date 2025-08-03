@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Typing Keys - Results</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">Typing Keys</a>
+    <nav>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle">🌓</button>
+    </nav>
+  </header>
+  <div class="container">
+    <h2>Results</h2>
+    <div id="resultsData"></div>
+    <div id="leaderboard"></div>
+    <!--<div id="stats"></div>-->
+    <button onclick="window.location.href='index.html'">Type Again</button>
+  </div>
+  <script src="leaderboard.js"></script>
+  <script src="theme-toggle.js"></script>
+  <script>
+    document.getElementById("resultsData").innerHTML = localStorage.getItem("latestResult");
+  </script>
+</body>
+</html>
